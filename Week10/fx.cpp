@@ -86,7 +86,7 @@ float Triple (float input) {
 }
 
 string Triple (string input) {
-    return input * 3;
+    return input + input + input;
 }
 
 
@@ -95,6 +95,7 @@ int main() {
     cout << "Finally, functions!!\n";
 
     cout << "5 tripled is " << Triple(5) << endl;
+    cout << "five tripled is " << Triple("five") << endl;
 
     // calling the function;
     SayHello();
