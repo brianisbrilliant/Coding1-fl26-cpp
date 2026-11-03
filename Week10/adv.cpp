@@ -14,6 +14,10 @@ int totalGold = 0;
 bool debug = true;          // set to false when shipping game
 
 
+int BetterDieRoll(int max = 6, int min = 1) {
+    return rand() % ((max - min) + 1) + min;
+}
+
 int DieRoll(int max = 6) {
     return rand() % max + 1;
 }
@@ -35,6 +39,15 @@ void Encounter() {
 int main() {
     // setup
     srand(time(0));     // seed the random number generator
+
+    // cout << BetterDieRoll(10, 5) << endl;
+    // cout << BetterDieRoll(20, 10) << endl;
+    // cout << BetterDieRoll(6, 3) << endl;
+    // cout << BetterDieRoll(20, -20) << endl;
+
+    for(int i = 0; i < 20; i++) {
+        cout << BetterDieRoll(20, 10) << endl;
+    }
 
     cout << "Let's go adventuring!\n";
 
