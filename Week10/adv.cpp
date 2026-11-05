@@ -33,6 +33,14 @@ void Encounter() {
     }
 
     cin >> input;
+    if(playerRoll >= enemyRoll) {
+        int gold = DieRoll(25);
+        totalGold = totalGold + gold;       // 0 + 10
+        totalGold += gold;                  // combined assignment operator +=
+    } else {
+        // subtract enemy roll from player health
+        health -= enemyRoll;
+    }
 
 }
 
