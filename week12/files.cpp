@@ -1,5 +1,5 @@
 // Brian Foster Week 12 Fall 2026
-// Coding 1 - Files and headers
+// Coding 1 - Files - reading and writing
 
 // write to a file first
 // the read from a file
